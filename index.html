@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Digital Clock</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .shadow-clock {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-800 flex items-center justify-center min-h-screen">
+  <div class="flex items-center space-x-4 bg-gray-900 p-6 rounded-xl shadow-clock text-white">
+    <div class="bg-gray-700 px-4 py-2 rounded-lg text-center shadow-md">
+      <div id="hours" class="text-2xl font-bold">00</div>
+      <div class="text-xs text-gray-300 mt-1">Hours</div>
+    </div>
+    <div class="text-2xl font-bold">:</div>
+    <div class="bg-gray-700 px-4 py-2 rounded-lg text-center shadow-md">
+      <div id="minutes" class="text-2xl font-bold">00</div>
+      <div class="text-xs text-gray-300 mt-1">Minutes</div>
+    </div>
+    <div class="text-2xl font-bold">:</div>
+    <div class="bg-gray-700 px-4 py-2 rounded-lg text-center shadow-md">
+      <div id="seconds" class="text-2xl font-bold">00</div>
+      <div class="text-xs text-gray-300 mt-1">Seconds</div>
+    </div>
+    <div id="ampm" class="ml-2 text-sm font-semibold">AM</div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
